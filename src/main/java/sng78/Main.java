@@ -1,0 +1,14 @@
+package sng78;
+
+import sng78.calculator.StringCalculator;
+
+class Main {
+
+    public static void main(String[] args) {
+        String infix = "5 * ( 2,654 * 3,876 + 4.18 * 6 ) + -10";
+        System.out.println("\n" + "Арифметическое выражение: " + infix);
+        StringCalculator sc = new StringCalculator();
+        String res = sc.calculate(infix);
+        System.out.println("Результат вычисления: " + res);
+    }
+}
